@@ -2,24 +2,23 @@
     "lunch":{
         "monday":{
             "entree":[
-                "entree_1",
-                "entree_2",
-                "un nom d'entrée très long qui ne devrait pas être affiché"
+                "Salade César",
+                "Salade de pâtes"
             ],
             "main":[
-                "main_1",
-                "main_2",
-                "main_3"
+                "Carbonara",
+                "Bolognese",
+                "Chili con carne",
+                "Boeuf bourguignon",
+                "Boeuf Stroganoff",
+                "Boeuf au curry"
             ],
             "side":[
-                "side_1",
-                "side_2",
-                "side_3"
+                "Pates"
             ],
             "dessert":[
-                "dessert_1",
-                "dessert_2",
-                "dessert_3"
+                "Yaourt",
+                "Fruits"
             ]
         },
         "tuesday":{
@@ -112,9 +111,9 @@
         }
     },
     "absent_teachers":[
-        "teacher_1",
-        "teacher_2",
-        "teacher_3"
+        "Mr. Smith",
+        "Mme. Johnson",
+        "Mme. Dupont"
     ],
     "events":[
         "event_1",

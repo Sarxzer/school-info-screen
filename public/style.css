@@ -5,11 +5,16 @@ body {
     padding: 0;
 }
 
+.windows-container {
+    display: flex;
+    flex-direction: row;
+}
+
 .window {
     background-color: #f0f0f0;
     border: 1px solid #ccc;
     border-radius: 5px;
-    padding: 20px;
+    padding: 10px;
     margin: 20px auto;
     width: 80%;
     max-width: 600px;
@@ -35,20 +40,55 @@ body {
     grid-template-rows: 1fr 1fr;
     gap: 10px;
 }
-.lunch-list li {
+
+.lunch-list .lunch-element-title {
+    font-size: 27px;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.lunch-list .lunch-element {
     background-color: #fff;
     border: 1px solid #ccc;
     border-radius: 5px;
-    padding: 10px;
+    padding: 20px;
     margin: 5px 0;
 
 }
 
-.lunch-list li p {
-    font-size: 24px;
-    color: #333;
+.lunch-list .lunch-element-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    text-align: left;
+    background-color: #fff;
+    padding: 5px;
+    margin: 5px 0;
+    font-size: 25px;
+    
 }
 
+.absent-teachers {
+    padding: 0;
+}
+
+.absent-teachers ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.absent-teachers li {
+    font-size: 25px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.absent-teachers li::before {
+    content: "❌ ";
+    color: red;
+}
 
 .footer {
     background-color: #f1f1f1;

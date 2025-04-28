@@ -4,12 +4,40 @@ async function fetchData() {
 
   document.getElementById('background').src = './src/img/backgrounds/'+ data.pages[0].background;
 
-  document.getElementById('entree').textContent = data.lunch.monday.entree.join(' ou ');
-  document.getElementById('main').textContent = data.lunch.monday.main.join(' ou ');
-  document.getElementById('side').textContent = data.lunch.monday.side.join(' ou ');
-  document.getElementById('dessert').textContent = data.lunch.monday.dessert.join(' ou ');
+  updateLunchMenu('entree', data.lunch.monday.entree);
+  updateLunchMenu('main', data.lunch.monday.main);
+  updateLunchMenu('side', data.lunch.monday.side);
+  updateLunchMenu('dessert', data.lunch.monday.dessert);
+
+  updateTeacherAbsence(data.absent_teachers);
 }
 
+function updateLunchMenu(sectionId, items) {
+  console.log(items);
+  const section = document.getElementById(sectionId);
+
+  // Clear previous content
+  section.innerHTML = '';
+
+  // Add new items
+  items.forEach(item => {
+      const li = document.createElement('li');
+      li.textContent = item;
+      section.appendChild(li);
+  });
+}
+
+function updateTeacherAbsence(teachers) {
+  console.log(teachers);
+  const absenceList = document.getElementById('absence-list');
+  absenceList.innerHTML = ''; // Clear previous content
+
+  teachers.forEach(teacher => {
+      const li = document.createElement('li');
+      li.textContent = teacher;
+      absenceList.appendChild(li);
+  });
+}
 
 function updateTime() {
   const now = new Date();
@@ -24,5 +52,5 @@ function updateTime() {
 setInterval(updateTime, 1000); // Update time every second
 updateTime();
 
-setInterval(fetchData, 10000); // Every 10 seconds like a ✨ninja✨
+setInterval(fetchData, 30000); // Every 10 seconds like a ✨ninja✨
 fetchData();
