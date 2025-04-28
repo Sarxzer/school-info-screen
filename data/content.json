@@ -1,131 +1,18 @@
 {
-    "lunch":{
-        "monday":{
-            "entree":[
-                "Salade César",
-                "Salade de pâtes"
-            ],
-            "main":[
-                "Carbonara",
-                "Bolognese",
-                "Chili con carne",
-                "Boeuf bourguignon",
-                "Boeuf Stroganoff",
-                "Boeuf au curry"
-            ],
-            "side":[
-                "Pates"
-            ],
-            "dessert":[
-                "Yaourt",
-                "Fruits"
-            ]
-        },
-        "tuesday":{
-            "entree":[
-                "entree_1",
-                "entree_2",
-                "entree_3"
-            ],
-            "main":[
-                "main_1",
-                "main_2",
-                "main_3"
-            ],
-            "sides":[
-                "side_1",
-                "side_2",
-                "side_3"
-            ],
-            "dessert":[
-                "dessert_1",
-                "dessert_2",
-                "dessert_3"
-            ]
-        },
-        "wednesday":{
-            "entree":[
-                "entree_1",
-                "entree_2",
-                "entree_3"
-            ],
-            "main":[
-                "main_1",
-                "main_2",
-                "main_3"
-            ],
-            "sides":[
-                "side_1",
-                "side_2",
-                "side_3"
-            ],
-            "dessert":[
-                "dessert_1",
-                "dessert_2",
-                "dessert_3"
-            ]
-        },
-        "thursday":{
-            "entree":[
-                "entree_1",
-                "entree_2",
-                "entree_3"
-            ],
-            "main":[
-                "main_1",
-                "main_2",
-                "main_3"
-            ],
-            "sides":[
-                "side_1",
-                "side_2",
-                "side_3"
-            ],
-            "dessert":[
-                "dessert_1",
-                "dessert_2",
-                "dessert_3"
-            ]
-        },
-        "friday":{
-            "entree":[
-                "entree_1",
-                "entree_2",
-                "entree_3"
-            ],
-            "main":[
-                "main_1",
-                "main_2",
-                "main_3"
-            ],
-            "sides":[
-                "side_1",
-                "side_2",
-                "side_3"
-            ],
-            "dessert":[
-                "dessert_1",
-                "dessert_2",
-                "dessert_3"
-            ]
-        }
-    },
-    "absent_teachers":[
-        "Mr. Smith",
-        "Mme. Johnson",
-        "Mme. Dupont"
-    ],
-    "events":[
-        "event_1",
-        "event_2",
-        "event_3"
-    ],
-
-    "pages":[
-        {
-            "id":"lunch-menu",
-            "background":"windows_xp_bliss-wide.jpg"
-        }
-        
-    ]
+  "lunch": {
+    "monday": {
+      "entree": [
+        "Salade"
+      ],
+      "main": [
+        ""
+      ],
+      "side": [
+        ""
+      ],
+      "dessert": [
+        ""
+      ]
+    }
+  }
 }
