@@ -1,15 +1,24 @@
 {
   "name": "school-info-screen",
   "version": "1.0.0",
-  "description": "",
+  "description": "This project is designed to display important school-related information on a digital screen. It provides a centralized platform for announcements, schedules, and other relevant updates.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^5.1.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sarxzer/school-info-screen.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Sarxzer/school-info-screen/issues"
+  },
+  "homepage": "https://github.com/Sarxzer/school-info-screen#readme"
 }
