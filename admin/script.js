@@ -49,40 +49,49 @@ async function updateDatabase() {
     days.forEach(day => {
         const lunch = data.lunch[day];
 
-        // Only update the fields that were modified
+        if (!lunch) {
+            console.warn(`⚠️ No lunch data for ${day}! Skipping...`);
+            return;
+        }
+
+        // Fix "side" vs "sides" inconsistency
+        const sideKey = lunch.side ? 'side' : 'sides';
+        lunch[sideKey] = getUpdatedValues(day + '-side', lunch[sideKey]);
+
+        // Update other fields
         lunch.entree = getUpdatedValues(day + '-entree', lunch.entree);
         lunch.main = getUpdatedValues(day + '-main', lunch.main);
-        lunch.side = getUpdatedValues(day + '-side', lunch.side);
         lunch.dessert = getUpdatedValues(day + '-dessert', lunch.dessert);
     });
 
-    // Post the updated data back to the server (without replacing the whole database!)
+    console.log("Updated data:", data);
+    console.log("Data being sent to the server:", data);
+
+    // Post the updated data back to the server
     const response = await fetch('/api/data', {
         method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-        },
+        headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(data),
     });
     const result = await response.json();
     console.log(result);
-    
 }
 
 // Helper function to get the updated values from inputs
 function getUpdatedValues(inputIdPrefix, currentValues) {
     const updatedValues = [];
 
-    currentValues.forEach((_, index) => {
-        const inputId = `${inputIdPrefix}${index+1}`;
+    // Loop through the inputs and collect their values
+    for (let i = 1; i <= 10; i++) { // Assuming a maximum of 10 inputs per field
+        const inputId = `${inputIdPrefix}${i}`;
         const input = document.getElementById(inputId);
 
-        if (input && input.value.trim()) { // Only update if the input has a value
+        if (input && input.value.trim()) {
             updatedValues.push(input.value.trim());
         }
-    });
+    }
 
-    return updatedValues.length > 0 ? updatedValues : currentValues; // Don't overwrite if empty
+    return updatedValues.length > 0 ? updatedValues : currentValues;
 }
 
 fetchDataAndFillInputs();
