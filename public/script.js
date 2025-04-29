@@ -54,7 +54,3 @@ updateTime();
 
 setInterval(fetchData, 30000); // Every 10 seconds like a ✨ninja✨
 fetchData();
-
-setInterval(() => {
-  location.reload();
-}, 10000); // Reload the page every 10 seconds
