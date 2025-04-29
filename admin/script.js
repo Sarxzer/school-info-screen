@@ -32,7 +32,7 @@ function updateInput(inputIdPrefix, items) {
         if (input) {
             input.value = item;
         } else {
-            console.warn(`Bruh 💀: No input found with id ${inputId}`);
+            console.warn(`No input found with id ${inputId}`);
         }
     });
 }
@@ -97,5 +97,42 @@ function getUpdatedValues(inputIdPrefix, currentValues) {
 fetchDataAndFillInputs();
 document.getElementById('save-button').addEventListener('click', async () => {
     await updateDatabase();
-    alert("Data saved successfully! ✨");
+    alert("Menu sauvegardé !");
+    location.reload();
+});
+
+// Remove the old day selector logic
+document.getElementById('day-selector')?.remove();
+
+// Smooth scrolling for sidebar links
+document.querySelectorAll('#sidebar a').forEach(link => {
+    link.addEventListener('click', (event) => {
+        event.preventDefault();
+        const targetId = link.getAttribute('href').substring(1);
+        const targetElement = document.getElementById(targetId);
+        if (targetElement) {
+            targetElement.scrollIntoView({ behavior: 'smooth' });
+        }
+    });
+});
+
+document.getElementById('category-selector').addEventListener('change', (event) => {
+    const selectedCategory = event.target.value;
+
+    if (!selectedCategory) return; // Do nothing if no category is selected
+
+    // Scroll to the selected day or dish
+    if (['monday', 'tuesday', 'wednesday', 'thursday', 'friday'].includes(selectedCategory)) {
+        // Scroll to the day section
+        const dayElement = document.getElementById(selectedCategory);
+        if (dayElement) {
+            dayElement.scrollIntoView({ behavior: 'smooth' });
+        }
+    } else {
+        // Scroll to the first occurrence of the dish category
+        const dishElement = document.querySelector(`.menu-element h4:contains(${selectedCategory})`);
+        if (dishElement) {
+            dishElement.scrollIntoView({ behavior: 'smooth' });
+        }
+    }
 });
