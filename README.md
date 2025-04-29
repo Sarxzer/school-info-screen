@@ -6,14 +6,13 @@ This project is designed to display important school-related information on a di
 
 - **Dynamic Announcements**: Display real-time updates and announcements.
 - **Schedules**: Show daily or weekly schedules for classes or events.
-- **Customizable Layout**: Easily adjust the screen layout to fit your needs.
 - **User-Friendly Interface**: Simple and intuitive design for easy navigation.
 
 ## Installation
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/your-username/School-Info-Screen.git
+    git clone https://github.com/Sarxzer/School-Info-Screen.git
     ```
 2. Navigate to the project directory:
     ```bash
@@ -30,9 +29,8 @@ This project is designed to display important school-related information on a di
 
 ## Usage
 
-1. Configure the settings in the `config.json` file.
-2. Add announcements or schedules via the admin panel.
-3. Deploy the application on a screen or monitor.
+1. Change the week lunch food in the admin panel.
+2. Deploy the application on a screen or monitor.
 
 ## Contributing
 
@@ -53,10 +51,6 @@ Contributions are welcome! Please follow these steps:
     ```
 5. Open a pull request.
 
-## License
-
-This project is licensed under the [MIT License](LICENSE).
-
 ## Contact
 
-For questions or feedback, please contact [nathan@sarxzer.xyz].
+For questions or feedback, please contact me at [nathan@sarxzer.xyz].
