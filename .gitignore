@@ -1,6 +1,10 @@
 # Ignore node_modules folder
 node_modules/
 
+# Ignore package lock and .npmrc files
+package-lock.json
+.npmrc
+
 # Ignore logs
 logs/
 *.log
