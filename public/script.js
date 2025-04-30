@@ -49,8 +49,29 @@ function updateTime() {
   const formattedTime = now.toLocaleTimeString('fr-FR', timeOptions);
   document.getElementById('time').textContent = formattedTime;
 }
+
+// Weather Forecast
+async function fetchWeather() {
+  const res = await fetch('https://api.open-meteo.com/v1/forecast?latitude=51.023488&longitude=2.3982489&current_weather=true');
+  const data = await res.json();
+
+  const weather = data.current_weather;
+  console.log(weather);
+  const weatherCode = weather.weathercode;
+  console.log(weatherCode);
+  const temperature = weather.temperature;
+  document.getElementById('temperature').textContent = `${temperature} °C`;
+
+
+
+  document.getElementById('weather-icon').src = `./src/img/weather/${weather.weathercode}${weather.is_day ? 'd' : 'n'}.png`;
+}
+
+setInterval(fetchWeather, 60000); // Update weather every minute
+fetchWeather();
+
 setInterval(updateTime, 1000); // Update time every second
 updateTime();
 
-setInterval(fetchData, 30000); // Every 10 seconds like a ✨ninja✨
+setInterval(fetchData, 5000); // Every 30 seconds like a ✨ninja✨
 fetchData();
