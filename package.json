@@ -12,7 +12,10 @@
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
-    "express": "^5.1.0"
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "https-proxy-agent": "^7.0.6",
+    "node-fetch": "^3.3.2"
   },
   "repository": {
     "type": "git",
@@ -21,5 +24,6 @@
   "bugs": {
     "url": "https://github.com/Sarxzer/school-info-screen/issues"
   },
-  "homepage": "https://github.com/Sarxzer/school-info-screen#readme"
+  "homepage": "https://github.com/Sarxzer/school-info-screen#readme",
+  "type": "module"
 }

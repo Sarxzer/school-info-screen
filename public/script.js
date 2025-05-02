@@ -2,12 +2,16 @@ async function fetchData() {
   const res = await fetch('/api/data');
   const data = await res.json();
 
+  const now = new Date();
+  const days = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday'];
+  const day = days[now.getDay()];
+
   document.getElementById('background').src = './src/img/backgrounds/'+ data.pages[0].background;
 
-  updateLunchMenu('entree', data.lunch.monday.entree);
-  updateLunchMenu('main', data.lunch.monday.main);
-  updateLunchMenu('side', data.lunch.monday.side);
-  updateLunchMenu('dessert', data.lunch.monday.dessert);
+  updateLunchMenu('entree', data.lunch[day].entree);
+  updateLunchMenu('main', data.lunch[day].main);
+  updateLunchMenu('side', data.lunch[day].side);
+  updateLunchMenu('dessert', data.lunch[day].dessert);
 
   updateTeacherAbsence(data.absent_teachers);
 }
@@ -52,7 +56,7 @@ function updateTime() {
 
 // Weather Forecast
 async function fetchWeather() {
-  const res = await fetch('https://api.open-meteo.com/v1/forecast?latitude=51.023488&longitude=2.3982489&current_weather=true');
+  const res = await fetch('/api/weather');
   const data = await res.json();
 
   const weather = data.current_weather;

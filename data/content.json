@@ -33,7 +33,7 @@
         "main_2",
         "main_3"
       ],
-      "sides": [
+      "side": [
         "side_1",
         "side_2",
         "side_3"
@@ -55,7 +55,7 @@
         "main_2",
         "main_3"
       ],
-      "sides": [
+      "side": [
         "side_1",
         "side_2",
         "side_3"
@@ -77,7 +77,7 @@
         "main_2",
         "main_3"
       ],
-      "sides": [
+      "side": [
         "side_1",
         "side_2",
         "side_3"
@@ -99,7 +99,7 @@
         "main_2",
         "main_3"
       ],
-      "sides": [
+      "side": [
         "side_1",
         "side_2",
         "side_3"
@@ -114,7 +114,8 @@
   "absent_teachers": [
     "Mr. Smith",
     "Mme. Johnson",
-    "Mme. Dupont"
+    "Mme. Dupont",
+    "Mr. Martin"
   ],
   "events": [
     "event_1",
