@@ -1,0 +1,61 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0" version="27.0.5">
+  <diagram name="Page-1" id="89l9Iw1rTXj4IrI6k6xd">
+    <mxGraphModel dx="1426" dy="768" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="6G746ZrpL7IEwuNSAwH4-1" value="" style="verticalLabelPosition=bottom;sketch=0;aspect=fixed;html=1;verticalAlign=top;strokeColor=none;align=center;outlineConnect=0;shape=mxgraph.citrix.cloud;" vertex="1" parent="1">
+          <mxGeometry y="131.5" width="95" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="6G746ZrpL7IEwuNSAwH4-2" value="" style="verticalLabelPosition=bottom;sketch=0;aspect=fixed;html=1;verticalAlign=top;strokeColor=none;align=center;outlineConnect=0;shape=mxgraph.citrix.tower_server;" vertex="1" parent="1">
+          <mxGeometry x="370" y="120" width="65" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="6G746ZrpL7IEwuNSAwH4-3" value="" style="verticalLabelPosition=bottom;sketch=0;aspect=fixed;html=1;verticalAlign=top;strokeColor=none;align=center;outlineConnect=0;shape=mxgraph.citrix.role_load_testing_launcher;" vertex="1" parent="1">
+          <mxGeometry x="730" y="10" width="86.32" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="6G746ZrpL7IEwuNSAwH4-4" value="" style="verticalLabelPosition=bottom;sketch=0;aspect=fixed;html=1;verticalAlign=top;strokeColor=none;align=center;outlineConnect=0;shape=mxgraph.citrix.desktop;" vertex="1" parent="1">
+          <mxGeometry x="730" y="230" width="89" height="98" as="geometry" />
+        </mxCell>
+        <mxCell id="6G746ZrpL7IEwuNSAwH4-6" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="6G746ZrpL7IEwuNSAwH4-1" target="6G746ZrpL7IEwuNSAwH4-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="420" y="400" as="sourcePoint" />
+            <mxPoint x="200" y="300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6G746ZrpL7IEwuNSAwH4-7" value="The server get Weather Info from Open-Meteo" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="90" y="131.5" width="270" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="6G746ZrpL7IEwuNSAwH4-8" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="6G746ZrpL7IEwuNSAwH4-2" target="6G746ZrpL7IEwuNSAwH4-4">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="330" y="300" as="sourcePoint" />
+            <mxPoint x="470" y="350" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="520" y="190" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6G746ZrpL7IEwuNSAwH4-9" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="6G746ZrpL7IEwuNSAwH4-2" target="6G746ZrpL7IEwuNSAwH4-3">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="420" y="400" as="sourcePoint" />
+            <mxPoint x="480" y="50" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6G746ZrpL7IEwuNSAwH4-10" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="6G746ZrpL7IEwuNSAwH4-4" target="6G746ZrpL7IEwuNSAwH4-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="420" y="400" as="sourcePoint" />
+            <mxPoint x="470" y="350" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="560" y="250" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6G746ZrpL7IEwuNSAwH4-11" value="&lt;div&gt;The screens get the page and information to load from the server&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="290" y="50" width="370" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="6G746ZrpL7IEwuNSAwH4-12" value="&lt;div&gt;Someone with a computer can use the administration page&lt;/div&gt;&lt;div&gt;to get and update the informations from the server&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="320" y="280" width="340" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
